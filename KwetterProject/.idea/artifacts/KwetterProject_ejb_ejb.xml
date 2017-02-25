@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="ejb-jar" name="KwetterProject-ejb:ejb">
-    <output-path>$PROJECT_DIR$/KwetterProject-ejb/target</output-path>
-    <root id="archive" name="KwetterProject-ejb-1.0-SNAPSHOT.jar">
-      <element id="artifact" artifact-name="KwetterProject-ejb:ejb exploded" />
-    </root>
-  </artifact>
-</component>
