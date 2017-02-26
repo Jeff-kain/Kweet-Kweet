@@ -15,5 +15,5 @@ import javax.ejb.Stateless;
 public class NewSessionBean {
 
     // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method") asd
+    // "Insert Code > Add Business Method") asdf
 }
