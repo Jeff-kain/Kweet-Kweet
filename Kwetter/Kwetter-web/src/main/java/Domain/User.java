@@ -24,6 +24,12 @@ public class User implements Serializable {
     private Long id;
     private String userName;
     private String url;
+
+    public User(Long id, String userName, String url) {
+        this.id = id;
+        this.userName = userName;
+        this.url = url;
+    }
     
     public Long getId() {
         return id;
