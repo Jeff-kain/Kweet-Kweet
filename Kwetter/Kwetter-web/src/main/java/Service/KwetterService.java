@@ -8,6 +8,7 @@ package Service;
 import Dao.KwetterDAO;
 import Domain.Kweet;
 import Domain.User;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
@@ -26,22 +27,29 @@ public class KwetterService {
     }
 
     public void registerUser(User user) {
+        kwetterDAO.createUser(user);
 
     }
 
-    public void editUser(User user) {
-
+    public void updateUser(User user) {
+        kwetterDAO.updateUser(user);
     }
 
     public void followUser(User follower, User followee) {
+        follower.addFollow(followee);
+        kwetterDAO.updateUser(follower);
+    }
 
+    public List<User> getFollowers(User user) {
+        return kwetterDAO.getFollowers(user);
     }
 
     public void unfollowUser(User follower, User followee) {
-
+        follower.removeFollow(followee);
+        kwetterDAO.updateUser(follower);
     }
 
     public void createKweet(Kweet kweet) {
-
+        kwetterDAO.createKweet(kweet);
     }
 }

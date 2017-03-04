@@ -6,6 +6,7 @@
 package Domain;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,13 +25,15 @@ public class User implements Serializable {
     private Long id;
     private String userName;
     private String url;
+    private List<User> following;
+    private List<Kweet> kweets;
 
     public User(Long id, String userName, String url) {
         this.id = id;
         this.userName = userName;
         this.url = url;
     }
-    
+
     public Long getId() {
         return id;
     }
@@ -38,11 +41,11 @@ public class User implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
-    
+
     public String getUserName() {
         return userName;
     }
-    
+
     public void setUserName(String userName) {
         this.userName = userName;
     }
@@ -53,6 +56,26 @@ public class User implements Serializable {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public List<User> getFollowing() {
+        return following;
+    }
+
+    public void addFollow(User follow) {
+        this.following.add(follow);
+    }
+
+    public void removeFollow(User follow) {
+        this.following.remove(follow);
+    }
+
+    public void addKweet(Kweet kweet) {
+        this.kweets.add(kweet);
+    }
+
+    public List<Kweet> getKweets() {
+        return kweets;
     }
 
     @Override
@@ -79,5 +102,5 @@ public class User implements Serializable {
     public String toString() {
         return "Domain.User[ id=" + id + " ]";
     }
-    
+
 }
