@@ -1,3 +1,2 @@
 # Kwetter
 # Foo
-# Fighter
