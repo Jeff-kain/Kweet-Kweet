@@ -3,8 +3,8 @@ package Service;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
- * and open the template in the editor. testtt
- */ 
+ * and open the template in the editor. testtt1
+ */
 import Dao.KwetterDAO;
 import Domain.Kweet;
 import Domain.User;
@@ -55,12 +55,11 @@ public class KwetterServiceTest {
     //
     // @Test
     // public void hello() {}
-    
-        @Test
+    @Test
     public void sampleTest() {
-    int a = 1;
+        int a = 1;
         int b = 2;
-            assertTrue(a+b==3);
+        assertTrue(a + b == 3);
     }
 
 //    @Test
