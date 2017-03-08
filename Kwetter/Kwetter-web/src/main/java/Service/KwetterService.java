@@ -28,6 +28,7 @@ public class KwetterService {
 
     public void registerUser(User user) {
         kwetterDAO.createUser(user);
+	kwetterDAO.createUser(user);
 
     }
 
