@@ -20,7 +20,7 @@ import javax.inject.Inject;
 public class KwetterService {
 
     @Inject
-    private KwetterDA kwetterDAO;
+    private KwetterDAO kwetterDAO;
 
     public void setKwetterDAO(KwetterDAO dao) {
         kwetterDAO = dao;
