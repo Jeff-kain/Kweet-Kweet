@@ -57,7 +57,7 @@ public class KwetterServiceTest {
     // public void hello() {}
     @Test
     public void sampleTest() {
-        int a = 1;
+        int a = 3;
         int b = 2;
         assertTrue(a + b == 3);
     }
